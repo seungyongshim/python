@@ -31,3 +31,4 @@
 *.txt text eol=crlf
 
 build.sh eol=lf
+*.py eol=lf
