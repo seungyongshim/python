@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Python39\\python.exe",
+    "python.pythonPath": "${workspaceRoot}/venv/Scripts/python.exe",
     "python.autoComplete.addBrackets": true,
     "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [

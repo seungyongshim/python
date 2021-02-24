@@ -22,7 +22,7 @@ jobs:
         pip install -r requirements.txt
     - name: Test
       run: |	  
-        pytest
+        pytest --junitxml=report.xml
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@4.8.4
       with:
@@ -46,4 +46,4 @@ jobs:
       if: always()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        files: src/**/Report.xml
+        files: report.xml
