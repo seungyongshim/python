@@ -23,7 +23,8 @@ jobs:
     - name: Test
       run: |	  
         pytest --junitxml=report.xml
-        pytest --cov=src --cov-report xml
+        coverage run --source src -m pytest
+        coverage xml
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@4.8.4
       with:
