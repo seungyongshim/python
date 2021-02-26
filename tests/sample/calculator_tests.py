@@ -13,7 +13,3 @@ def test_minus():
     right = 1
     sut = Calculator(left, right)
     assert sut.minus() is left - right
-
-
-def test_multiply():
-    assert False
