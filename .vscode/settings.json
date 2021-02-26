@@ -3,7 +3,7 @@
     "python.autoComplete.addBrackets": true,
     "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [
-        "--cache-clear",
+        "--cache-clear"
     ],
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
@@ -20,5 +20,14 @@
     "terminal.integrated.env.windows": {
         "PYTHONPATH": "${workspaceFolder}/src"
     },
-    "coverage-gutters.showLineCoverage": true,
+    "emeraldwalk.runonsave": {
+        "autoClearConsole": true,
+        "shell": "pwsh",
+        "commands": [
+            {
+                "match": "\\.py$",
+                "cmd": " ${env:PYTHONPATH}='./src'; ./venv/Scripts/Activate.ps1; coverage run --source src -m pytest ; coverage xml -o cov.xml; coverage report -m"
+            }
+        ]
+    }
 }

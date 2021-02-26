@@ -16,6 +16,7 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 
+cov.xml
 
 # User-specific files
 *.rsuser
