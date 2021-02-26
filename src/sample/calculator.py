@@ -1,4 +1,4 @@
-from src.sample import add, minus
+from .calculator_helper import add, minus
 
 
 class Calculator:

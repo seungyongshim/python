@@ -1,4 +1,4 @@
-from src.sample import add, minus
+from sample.calculator_helper import *
 
 
 def test_add():
