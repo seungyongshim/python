@@ -1,8 +1,15 @@
 ![CI](../../workflows/CI/badge.svg)
 
+## 1. use setup-dev.ps1 (simple)
+```powershell
+Set-ExecutionPolicy RemoteSigned
+./setup-dev.ps1
+```
 
-## 1. venc 환경 구축
-`python3 -m venv venv`
-
-## 2. requirements 추가
-`pip install -r requirements.txt`
+## 2. manual setup
+```powershell
+python3 -m venv venv
+& venv/Scripts/Activate.ps1
+pip install -r requirements-dev.txt
+pip install -r requirements.txt
+```
